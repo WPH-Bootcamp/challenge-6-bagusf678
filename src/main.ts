@@ -12,3 +12,24 @@ console.log("=====================================");
 
 // Mulai pengujian di bawah ini
 
+
+import {
+  addBook,
+  listBooks,
+  searchBook,
+} from "./functions/bookManager";
+
+// Tambah buku baru
+addBook("Semikonduktor", "Anwar Jazidi", 2004);
+
+addBook("motor induksi", "azhari tahir", 2008);
+
+// Tampilkan semua buku
+listBooks();
+
+// Cari buku
+searchBook("Bumi");
+
+// Test optional parameter
+searchBook();
+
